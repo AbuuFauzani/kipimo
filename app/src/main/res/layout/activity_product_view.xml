@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back2"
+    android:layout_height="match_parent"
+    tools:context=".ProductViewActivity">
+
+    <TextView
+        android:id="@+id/Laptopcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laptop Category"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/searchbar"
+        android:layout_width="237dp"
+        android:layout_height="39dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:fontFamily="@font/pt_sans_bold"
+        android:hint="Search Product"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/productkupatana"
+        android:layout_width="188dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="HP EliteBook 725 8GB AMD A8 SSD 256GB"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toEndOf="@+id/picha2"
+        tools:layout_editor_absoluteY="301dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pricekupatana"
+        android:layout_width="171dp"
+        android:layout_height="13dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="580,000"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/picha2"
+        app:layout_constraintTop_toBottomOf="@+id/productkupatana" />
+
+    <Button
+        android:id="@+id/kupatanaweb"
+        android:layout_width="150dp"
+        android:layout_height="41dp"
+        android:text="kupatana.com"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pricekupatana" />
+
+
+    <TextView
+        android:id="@+id/productkariakoomall"
+        android:layout_width="175dp"
+        android:layout_height="29dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="HP EliteBook 725 8GB AMD A8 SSD 256GB"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toEndOf="@+id/picha3"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <TextView
+        android:id="@+id/pricekariakoomall"
+        android:layout_width="175dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="580,000"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productkariakoomall" />
+
+    <ImageView
+        android:id="@+id/picha1"
+        android:layout_width="152dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/dietician" />
+
+    <ImageView
+        android:id="@+id/picha2"
+        android:layout_width="154dp"
+        android:layout_height="169dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picha1"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/dietician" />
+
+    <ImageView
+        android:id="@+id/picha3"
+        android:layout_width="153dp"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picha2"
+        app:layout_constraintVertical_bias="0.134"
+        app:srcCompat="@drawable/dietician" />
+
+
+    <TextView
+        android:id="@+id/pricejiji"
+        android:layout_width="128dp"
+        android:layout_height="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="550,000"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/picha1"
+        app:layout_constraintTop_toBottomOf="@+id/productjiji"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/productjiji"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="564dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="HP EliteBook 725 8GB AMD A8 SSD 256GB"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toEndOf="@+id/picha1" />
+
+    <Button
+        android:id="@+id/jijiweb"
+        android:layout_width="104dp"
+        android:layout_height="34dp"
+        android:text="jiji.com"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/picha1"
+        app:layout_constraintTop_toBottomOf="@+id/pricejiji"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/kariakoomallweb"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="kariakoomall.com"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/picha2"
+        app:layout_constraintTop_toBottomOf="@+id/productkariakoomall" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
